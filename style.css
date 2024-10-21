@@ -1,0 +1,111 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Encabezados principales */
+h1 {
+    color: #1a73e8;
+    font-size: 36px;
+}
+
+/* Encabezados secundarios */
+h2 {
+    color: #1a73e8;
+    font-size: 28px;
+}
+
+/* Tabla para las secciones */
+table {
+    margin: 0 auto;
+    width: 60%;
+    border-collapse: collapse;
+}
+
+/* Estilos para la tabla */
+table, th, td {
+    border: 2px solid #1a73e8;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Encabezados de la tabla */
+th {
+    background-color: #1a73e8;
+    color: white;
+}
+
+/* Enlaces dentro de la tabla */
+a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+/* Al pasar el ratón por encima del enlace */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para párrafos */
+p {
+    font-size: 16px;
+    color: #333;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* Párrafo en rojo (específico para el de biografía) */
+p[style="color:red;"] {
+    color: red;
+    font-size: 16px;
+}
+
+/* Lista de los integrantes */
+ul {
+    list-style-type: square;
+    color: #1a73e8;
+    text-align: left;
+    display: inline-block;
+}
+
+/* Estilos para el formulario de búsqueda */
+form {
+    margin: 20px 0;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border: 2px solid #1a73e8;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1059bc;
+}
+
+/* Estilo para la imagen del logo */
+img {
+    margin: 20px 0;
+    border-radius: 10px;
+}

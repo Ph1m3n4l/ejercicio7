@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis Band</title>
+    <meta name="author" content="Cesar Quintero">
+    <link rel="stylesheet" href="style.css"> <!--- link al css -->
+</head>
+<body>
+    <h1>Oasis</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Oasis_Logo.svg/800px-Oasis_Logo.svg.png" alt="Oasis logo" style="width: 400px;height:200px;">
+    
+    <h2>♬ Live Forever ♬</h2>
+    <audio controls autoplay> <!--- Elemento audio -->
+        <source src="Live Forever.mp3" type="audio/mpeg">
+    </audio>
+    
+    <h2>Sites</h2>
+    <table border="3">
+        <tr>
+            <th>Sección</th>
+            <th>URL</th>
+        </tr>
+        <tr>
+            <td>Página oficial</td>
+            <td><a href="https://www.oasisinet.com" target="_blank">Sitio Oficial</a></td>
+        </tr>
+        <tr>
+            <td>Spotify</td>
+            <td><a href="https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4" target="_blank">Oasis en Spotify</a></td>
+        </tr>
+        <tr>
+            <td>Wikipedia</td>
+            <td><a href="https://es.wikipedia.org/wiki/Oasis_(banda)" target="_blank">Oasis en Wikipedia</a></td>
+        </tr>
+    </table>
+    
+    <h2>Biografía</h2>
+    <p style="color:red;"> <!--- Color de fuente roja con CSS -->
+        Oasis es una banda inglesa de britpop y rock alternativo, formada en
+        Mánchester en 1991. Previamente en 1990, fueron conocidos como The Rain
+        (en español, «La Lluvia»), el grupo contaba con el cantante Chris
+        Hutton, el guitarrista Paul Arthurs, el bajista Paul McGuigan y el
+        baterista Daniel Alexander, a los que más tarde se unirían en 1991; Liam
+        Gallagher en la voz y Tony McCarroll en la batería. El último en formar
+        parte del grupo fue el hermano mayor de Liam, Noel Gallagher (a petición
+        de su propio hermano), quien obtuvo el papel de compositor principal,
+        guitarrista principal y cantante secundario.
+    </p>
+    
+    <h2>Integrantes principales</h2>
+    <ul>
+        <li>Liam Gallagher</li>
+        <li>Noel Gallagher</li>
+        <li>Paul "Bonehead" Arthurs</li>
+    </ul>
+    <p>Han tenido más integrantes, pero esos son sus principales.</p>
+
+    <h1>Búsqueda</h1>
+    <form method="GET" action="#">
+        <div>
+            <label for="palabra-clave">Buscar el nombre de una canción</label>
+            <input type="text" id="palabra-clave" name="palabra-clave">
+        </div>
+        <div>
+            <label for="album">Buscar por cantante</label>
+            <input type="text" id="album" name="album">
+        </div>
+        <div>
+            <button type="submit">Buscar</button>
+            <button type="reset">Limpiar</button>
+        </div>
+    </form>
+</body>
+</html>
