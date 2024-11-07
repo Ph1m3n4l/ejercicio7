@@ -3,74 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oasis Band</title>
+    <title>Oasis Band con Bootstrap</title>
     <meta name="author" content="Cesar Quintero">
-    <link rel="stylesheet" href="style.css"> <!--- link al css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Oasis</h1>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Oasis_Logo.svg/800px-Oasis_Logo.svg.png" alt="Oasis logo" style="width: 400px;height:200px;">
-    
-    <h2>♬ Live Forever ♬</h2>
-    <audio controls autoplay> <!--- Elemento audio -->
-        <source src="Live Forever.mp3" type="audio/mpeg">
-    </audio>
-    
-    <h2>Sites</h2>
-    <table border="3">
-        <tr>
-            <th>Sección</th>
-            <th>URL</th>
-        </tr>
-        <tr>
-            <td>Página oficial</td>
-            <td><a href="https://www.oasisinet.com" target="_blank">Sitio Oficial</a></td>
-        </tr>
-        <tr>
-            <td>Spotify</td>
-            <td><a href="https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4" target="_blank">Oasis en Spotify</a></td>
-        </tr>
-        <tr>
-            <td>Wikipedia</td>
-            <td><a href="https://es.wikipedia.org/wiki/Oasis_(banda)" target="_blank">Oasis en Wikipedia</a></td>
-        </tr>
-    </table>
-    
-    <h2>Biografía</h2>
-    <p style="color:red;"> <!--- Color de fuente roja con CSS -->
-        Oasis es una banda inglesa de britpop y rock alternativo, formada en
-        Mánchester en 1991. Previamente en 1990, fueron conocidos como The Rain
-        (en español, «La Lluvia»), el grupo contaba con el cantante Chris
-        Hutton, el guitarrista Paul Arthurs, el bajista Paul McGuigan y el
-        baterista Daniel Alexander, a los que más tarde se unirían en 1991; Liam
-        Gallagher en la voz y Tony McCarroll en la batería. El último en formar
-        parte del grupo fue el hermano mayor de Liam, Noel Gallagher (a petición
-        de su propio hermano), quien obtuvo el papel de compositor principal,
-        guitarrista principal y cantante secundario.
-    </p>
-    
-    <h2>Integrantes principales</h2>
-    <ul>
-        <li>Liam Gallagher</li>
-        <li>Noel Gallagher</li>
-        <li>Paul "Bonehead" Arthurs</li>
-    </ul>
-    <p>Han tenido más integrantes, pero esos son sus principales.</p>
 
-    <h1>Búsqueda</h1>
-    <form method="GET" action="#">
-        <div>
-            <label for="palabra-clave">Buscar el nombre de una canción</label>
-            <input type="text" id="palabra-clave" name="palabra-clave">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Oasis Band</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#biografia">Biografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <label for="album">Buscar por cantante</label>
-            <input type="text" id="album" name="album">
+    </nav>
+
+    <!-- Sistema de Grillas y Responsive Breakpoints -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <h1 class="display-4">Oasis</h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Oasis_Logo.svg/800px-Oasis_Logo.svg.png" alt="Oasis logo" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-6 col-lg-8">
+                <h2>♬ Live Forever ♬</h2>
+                <audio controls>
+                    <source src="Live Forever.mp3" type="audio/mpeg">
+                </audio>
+            </div>
         </div>
-        <div>
-            <button type="submit">Buscar</button>
-            <button type="reset">Limpiar</button>
+    </div>
+
+    <!-- Cards -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <alt="Imagen de Oasis">
+                    <div class="card-body">
+                        <h5 class="card-title">Oasis en Wikipedia</h5>
+                        <p class="card-text">Visita la página de Wikipedia para más información.</p>
+                        <a href="https://es.wikipedia.org/wiki/Oasis_(banda)" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <alt="Spotify">
+                    <div class="card-body">
+                        <h5 class="card-title">Oasis en Spotify</h5>
+                        <p class="card-text">Escucha la música de Oasis en Spotify.</p>
+                        <a href="https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4" class="btn btn-primary">Escuchar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <alt="Página oficial">
+                    <div class="card-body">
+                        <h5 class="card-title">Página Oficial</h5>
+                        <p class="card-text">Visita el sitio oficial de la banda Oasis.</p>
+                        <a href="https://www.oasisinet.com" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>
+    </div>
+
+    <!-- Accordion -->
+    <div class="container mt-5">
+        <h2>Biografía</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Inicios de la Banda
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Oasis es una banda inglesa de britpop y rock alternativo, formada en Mánchester en 1991.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Éxitos de Oasis
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Canciones como "Wonderwall" y "Don't Look Back in Anger" son parte de su legado.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Extra Component: Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Notificación</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                ¡Bienvenido a la página de fanáticos de Oasis!
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toast = new bootstrap.Toast(document.getElementById('liveToast'));
+        toast.show();
+    </script>
 </body>
 </html>
